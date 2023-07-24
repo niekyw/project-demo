@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body id="home">
+	<div class="title">
+		<h1>SPEEDIFY</h1>
+		<p>a reaction speed tester</p>
+
+		<h2>Welcome, {{username}} </h2>
+	</div>
+
+	<div class="buttons">
+		<button onclick="window.location.href='/play';">Play Game</button>
+		<button onclick="window.location.href='/leaderboard';">See Leaderboard</button>
+	</div>	
+
+	<div class="wide-button">
+		<form action="/home" method="POST">
+			<button onclick="window.location.href='/';" type="submit">Log Out</button>
+		 </form>
+	</div>
+	
+</body>
+</html>

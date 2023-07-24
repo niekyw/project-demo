@@ -1,0 +1,115 @@
+body{
+    background-color: gray;
+    margin: auto;
+    font-family: "Helvitica", sans-serif;
+    color: black;
+    height: 100%;
+    overflow-y: hidden;
+    padding-top: 10px;
+}
+
+.title {
+    text-align: center;
+    line-height: 1ch;
+}
+
+.buttons {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 15%;
+
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 30%;
+    border: none;
+    padding: 15px 32px;
+    font-size: 20px;
+    margin: 15px;
+}
+
+button:hover {
+    background-color: rgb(0, 140, 255)
+}
+
+#home .buttons {
+    padding-top: 5%;
+}
+
+.form {
+    text-align: center;
+    display: block;
+}
+
+input {
+    padding: 15px 32px;
+    font-size: 20px;
+    width: 25%;
+}
+
+h2 {
+    font-size: 45px;
+    padding-top: 5%;
+}
+
+.wide-button {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.wide-button button {
+    width: 63%;
+    padding: 15px 32px;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.leaderboard {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    background-color: black;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: none;
+    position: relative; 
+    border-style: solid;
+    border-color: black;
+}
+
+#start {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#start button {
+    width: 63%;
+    padding: 15px 32px;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.highlighted {
+    background-color: rgb(0, 140, 255); 
+    color: white;
+}

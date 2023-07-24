@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Leaderboard</title>
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div>
+	<div class="title">
+		<h1>SPEEDIFY</h1>
+		<p>leaderboard</p>
+	</div>
+
+	<table>
+		<tr>
+			<th>RANK</th>
+			<th>PLAYER</th>
+			<th></th>
+			<th>Reaction Time (s)</th>
+		</tr>
+
+		{% for tup in leaderboard %}
+
+			{% if username in tup %}
+			<tr class="highlighted">
+				<td>{{tup.0}}</td>
+				<td>{{tup.1}}</td>
+				<td> </td>
+				<td>{{tup.2}}</td>
+			</tr>
+			{% else %}
+			<tr>
+				<td>{{tup.0}}</td>
+				<td>{{tup.1}}</td>
+				<td> </td>
+				<td>{{tup.2}}</td>
+			</tr>
+			{% endif %}
+		
+		{% endfor %}
+		
+		{% if my_info %}
+		<tr>
+			<td>...</td>
+			<td>...</td>
+			<td> </td>
+			<td>...</td>
+		</tr>
+
+		<tr class="highlighted">
+			<td>{{my_info.0}}</td>
+			<td>{{my_info.1}}</td>
+			<td> </td>
+			<td>{{my_info.2}}</td>
+		</tr>
+		{% endif %}
+
+	</table>
+
+	<div id="leaderboard">
+		<div class="buttons">
+			<button onclick="window.location.href='/play';">Replay</button>
+			<button onclick="window.location.href='/';">Log Out</button>
+		</div>
+	</div>
+	
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+  <title>Log In</title>
+</head>
+<body>
+  <div class="title">
+		<h1>SPEEDIFY</h1>
+		<p>a reaction speed tester</p>
+	</div>
+
+  <div class="form">
+    <form action="/login" method="POST">  
+
+      <div class="input-container">
+        <input class="input-field" type="email" placeholder="Email*" name="email" required>
+      </div>
+
+      <div class="input-container">
+        <input class="input-field" type="password" placeholder="Password*" name="password" required>
+      </div>
+
+      <button type="submit" class="btn">Log In</button>
+    </form>
+
+    <a href="signup">Don't have an account? Click here to sign up.</a>
+  </div>
+</body>
+</html>
+

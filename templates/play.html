@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Play</title>
+	<link rel="stylesheet" href="/static/style.css">
+	<script type="text/javascript" src="/static/index.js"></script>
+</head>
+<body>
+	<div class="title">
+		<h1>SPEEDIFY</h1>
+		<p>a reaction speed tester</p>
+	</div>
+
+	<div id="start">
+		<button id="start_game" onclick="startGame()">Start Game</button>
+	</div>
+
+	<div id="game">
+		<div id="box"></div>
+	</div>
+
+	<form id="score" action="/play" method="post">
+		<input type="hidden" name="jsvar" id="jsvar" value="" />
+	  </form>
+	
+		
+
+
+
+</body>
+</html>
